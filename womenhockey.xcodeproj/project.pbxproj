@@ -34,6 +34,9 @@
 		F845BFA328CE1A5C00B2AAEC /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845BFA228CE1A5C00B2AAEC /* HomeCollectionViewCell.swift */; };
 		F845BFA528CE1C8800B2AAEC /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845BFA428CE1C8800B2AAEC /* SideMenuVC.swift */; };
 		F845BFA928CE201100B2AAEC /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845BFA828CE201100B2AAEC /* HistoryTableViewCell.swift */; };
+		F85D57BE28F619970030B717 /* TennisNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D57BD28F619970030B717 /* TennisNotesVC.swift */; };
+		F85D57C028F61A000030B717 /* TennisCalanderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D57BF28F61A000030B717 /* TennisCalanderVC.swift */; };
+		F85D57C228F61A510030B717 /* TennisInteractiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D57C128F61A510030B717 /* TennisInteractiveVC.swift */; };
 		F8BE54C528CF956D00B74806 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE54C428CF956D00B74806 /* CalendarViewController.swift */; };
 		F8BE54C728CFC47200B74806 /* MyBetMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE54C628CFC47200B74806 /* MyBetMainVC.swift */; };
 		F8BE54C928CFC55000B74806 /* MyBetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE54C828CFC55000B74806 /* MyBetsViewController.swift */; };
@@ -78,6 +81,9 @@
 		F845BFA228CE1A5C00B2AAEC /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F845BFA428CE1C8800B2AAEC /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		F845BFA828CE201100B2AAEC /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		F85D57BD28F619970030B717 /* TennisNotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisNotesVC.swift; sourceTree = "<group>"; };
+		F85D57BF28F61A000030B717 /* TennisCalanderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisCalanderVC.swift; sourceTree = "<group>"; };
+		F85D57C128F61A510030B717 /* TennisInteractiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisInteractiveVC.swift; sourceTree = "<group>"; };
 		F8BE54C428CF956D00B74806 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		F8BE54C628CFC47200B74806 /* MyBetMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBetMainVC.swift; sourceTree = "<group>"; };
 		F8BE54C828CFC55000B74806 /* MyBetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBetsViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +164,9 @@
 				04A14CC728EF867D00032F08 /* TennisMatchViewController.swift */,
 				0402DE1D28EF8F1B0087075B /* HistoryTennisViewController.swift */,
 				0484373828F0D085007C2614 /* TennisBetViewController.swift */,
+				F85D57BD28F619970030B717 /* TennisNotesVC.swift */,
+				F85D57BF28F61A000030B717 /* TennisCalanderVC.swift */,
+				F85D57C128F61A510030B717 /* TennisInteractiveVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -355,6 +364,7 @@
 				F8BE54C728CFC47200B74806 /* MyBetMainVC.swift in Sources */,
 				04A14CC828EF867D00032F08 /* TennisMatchViewController.swift in Sources */,
 				04967D8628EE3D9D00E1B2EF /* CompositionalLayout.swift in Sources */,
+				F85D57C228F61A510030B717 /* TennisInteractiveVC.swift in Sources */,
 				F8E02BEF28CE8AEB005F03DA /* GameScene.swift in Sources */,
 				047D76D428C697FF00729FF7 /* AppDelegate.swift in Sources */,
 				048D769928CA33E800FF1914 /* BetViewController.swift in Sources */,
@@ -368,10 +378,12 @@
 				04852EA228CA5C7700731DC1 /* NotesViewController.swift in Sources */,
 				04D171F128CA90E9006FE092 /* StaticsViewController.swift in Sources */,
 				F845BFA928CE201100B2AAEC /* HistoryTableViewCell.swift in Sources */,
+				F85D57C028F61A000030B717 /* TennisCalanderVC.swift in Sources */,
 				04A14CC628EF7E7300032F08 /* TennisDetailViewController.swift in Sources */,
 				040CEDC328CA41DA0056D787 /* NewsViewController.swift in Sources */,
 				04BC384228C7FB3F000EA3FD /* BetsVC.swift in Sources */,
 				04967D8228EE33D700E1B2EF /* NewsTennisViewController.swift in Sources */,
+				F85D57BE28F619970030B717 /* TennisNotesVC.swift in Sources */,
 				047D76E828C69BF900729FF7 /* HomeViewController.swift in Sources */,
 				F8E02BE628CE857E005F03DA /* NewsTableViewCell.swift in Sources */,
 				F845BFA028CE149500B2AAEC /* Home.swift in Sources */,
@@ -526,7 +538,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = womenhockey/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Women hockey Info";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tennis interactive";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -538,7 +550,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WomenHockeyInfo11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tennisinteractive1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -556,7 +568,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = womenhockey/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Women hockey Info";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tennis interactive";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -568,7 +580,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WomenHockeyInfo11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tennisinteractive1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
