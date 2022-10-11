@@ -4194,19 +4194,19 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9YK-ff-AId">
                                                             <rect key="frame" x="184.5" y="61" width="45.5" height="23"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip3-i3-yMu">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip3-i3-yMu">
                                                                     <rect key="frame" x="0.0" y="0.0" width="11.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                     <color key="textColor" red="0.93333333333333335" green="0.60392156862745094" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VES-Zk-kDu">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VES-Zk-kDu">
                                                                     <rect key="frame" x="19.5" y="0.0" width="6.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                                                     <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weh-LN-Tn3">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weh-LN-Tn3">
                                                                     <rect key="frame" x="34" y="0.0" width="11.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                     <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -4567,13 +4567,13 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                                             <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-AT-Pns">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-AT-Pns">
                                                                             <rect key="frame" x="19.5" y="0.0" width="6.5" height="23"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                                                             <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMr-OP-7Ss">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMr-OP-7Ss">
                                                                             <rect key="frame" x="34" y="0.0" width="11.5" height="23"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                             <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -5513,6 +5513,132 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
             </objects>
             <point key="canvasLocation" x="-2375.36231884058" y="3418.5267857142858"/>
         </scene>
+        <!--My Custom Tab Bar-->
+        <scene sceneID="zjh-gV-s8d">
+            <objects>
+                <viewController storyboardIdentifier="MyCustomTabBar" modalPresentationStyle="fullScreen" id="02W-EN-Oop" customClass="MyCustomTabBar" customModule="Soccer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RI8-3y-X9k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Le5-s3-Pr3">
+                                <rect key="frame" x="0.0" y="806" width="414" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 6761" translatesAutoresizingMaskIntoConstraints="NO" id="K3s-69-eyt">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioW-Tb-ecM">
+                                        <rect key="frame" x="0.0" y="56" width="414" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="a5U-zY-O7O"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="1xR-6j-Udn">
+                                        <rect key="frame" x="10" y="0.0" width="394" height="56"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDv-60-Rf7">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="56"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="اخر المباريات">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tabChangedWithSender:" destination="02W-EN-Oop" eventType="touchUpInside" id="KAW-3a-3Y5"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dO4-za-1Rz">
+                                                <rect key="frame" x="108" y="0.0" width="1" height="56"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="lFC-O7-SI6"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e0-U3-bxE">
+                                                <rect key="frame" x="133" y="0.0" width="42" height="56"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="الاخبار">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tabChangedWithSender:" destination="02W-EN-Oop" eventType="touchUpInside" id="aQT-6I-i5N"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyb-Vs-qZ9">
+                                                <rect key="frame" x="199" y="0.0" width="1" height="56"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="Bqe-P6-SJo"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-MA-liL">
+                                                <rect key="frame" x="224" y="0.0" width="60" height="56"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="المفضلة">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tabChangedWithSender:" destination="02W-EN-Oop" eventType="touchUpInside" id="UDa-u3-4q2"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P07-2w-4dU">
+                                                <rect key="frame" x="308" y="0.0" width="1" height="56"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="Es8-f4-SQB"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWj-G3-CsP">
+                                                <rect key="frame" x="333" y="0.0" width="61" height="56"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="الرئيسية ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tabChangedWithSender:" destination="02W-EN-Oop" eventType="touchUpInside" id="R9G-lL-RP4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="K3s-69-eyt" firstAttribute="top" secondItem="Le5-s3-Pr3" secondAttribute="top" id="HBP-Xb-VbY"/>
+                                    <constraint firstItem="ioW-Tb-ecM" firstAttribute="top" secondItem="1xR-6j-Udn" secondAttribute="bottom" id="Jry-83-nT6"/>
+                                    <constraint firstAttribute="bottom" secondItem="ioW-Tb-ecM" secondAttribute="bottom" constant="33" id="KBU-tW-W9s"/>
+                                    <constraint firstItem="K3s-69-eyt" firstAttribute="leading" secondItem="Le5-s3-Pr3" secondAttribute="leading" id="Mg1-uW-nwW"/>
+                                    <constraint firstAttribute="height" constant="90" id="QzR-zL-qMz"/>
+                                    <constraint firstAttribute="trailing" secondItem="ioW-Tb-ecM" secondAttribute="trailing" id="f52-Hi-J5y"/>
+                                    <constraint firstItem="1xR-6j-Udn" firstAttribute="top" secondItem="Le5-s3-Pr3" secondAttribute="top" id="gpH-Qi-fKW"/>
+                                    <constraint firstAttribute="trailing" secondItem="K3s-69-eyt" secondAttribute="trailing" id="lGs-4Q-HgF"/>
+                                    <constraint firstItem="1xR-6j-Udn" firstAttribute="leading" secondItem="Le5-s3-Pr3" secondAttribute="leading" constant="10" id="sf5-lZ-rb9"/>
+                                    <constraint firstAttribute="trailing" secondItem="1xR-6j-Udn" secondAttribute="trailing" constant="10" id="tZd-LR-zTr"/>
+                                    <constraint firstItem="ioW-Tb-ecM" firstAttribute="leading" secondItem="Le5-s3-Pr3" secondAttribute="leading" id="wpD-r5-e9Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="K3s-69-eyt" secondAttribute="bottom" id="y1Z-uf-Nzh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Pt-zy-zIM"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Le5-s3-Pr3" firstAttribute="trailing" secondItem="3Pt-zy-zIM" secondAttribute="trailing" id="d3e-uJ-JTB"/>
+                            <constraint firstItem="Le5-s3-Pr3" firstAttribute="leading" secondItem="3Pt-zy-zIM" secondAttribute="leading" id="kQK-nR-W4V"/>
+                            <constraint firstAttribute="bottom" secondItem="Le5-s3-Pr3" secondAttribute="bottom" id="qxQ-Wi-PhA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Mu-Aa-RHN"/>
+                    <connections>
+                        <outlet property="tabView" destination="Le5-s3-Pr3" id="lG3-jd-c7U"/>
+                        <outletCollection property="buttons" destination="EDv-60-Rf7" collectionClass="NSMutableArray" id="zkU-BS-bAS"/>
+                        <outletCollection property="buttons" destination="0e0-U3-bxE" collectionClass="NSMutableArray" id="VZQ-jh-hk1"/>
+                        <outletCollection property="buttons" destination="PuP-MA-liL" collectionClass="NSMutableArray" id="gZv-12-IlG"/>
+                        <outletCollection property="buttons" destination="jWj-G3-CsP" collectionClass="NSMutableArray" id="1YO-aN-bD4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4k-m2-kT0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3565" y="1692"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="NWL-P7-zLH"/>
@@ -5529,6 +5655,7 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
         <image name="Image 6" width="34" height="34"/>
         <image name="Image 7" width="7.5" height="12"/>
         <image name="Image 9" width="47" height="15"/>
+        <image name="Rectangle 6761" width="413" height="84"/>
         <image name="Vector" width="267" height="168"/>
         <image name="background" width="720" height="1280"/>
         <image name="boy" width="300" height="393"/>

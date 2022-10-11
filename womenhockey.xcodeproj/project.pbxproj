@@ -28,6 +28,7 @@
 		04BC384228C7FB3F000EA3FD /* BetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC384128C7FB3F000EA3FD /* BetsVC.swift */; };
 		04D171F128CA90E9006FE092 /* StaticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D171F028CA90E9006FE092 /* StaticsViewController.swift */; };
 		4E4261CB23806566C25C471C /* Pods_womenhockey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B700E42021B0097DC86C46AD /* Pods_womenhockey.framework */; };
+		F81B338828F4F2A500C16324 /* MyCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B338728F4F2A500C16324 /* MyCustomTabBar.swift */; };
 		F83F161728CCF3F3005653F1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F161628CCF3F3005653F1 /* Configuration.swift */; };
 		F845BFA028CE149500B2AAEC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845BF9F28CE149500B2AAEC /* Home.swift */; };
 		F845BFA328CE1A5C00B2AAEC /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845BFA228CE1A5C00B2AAEC /* HomeCollectionViewCell.swift */; };
@@ -71,6 +72,7 @@
 		51FE5A7E3490B88806B0D2C2 /* Pods-womenhockey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-womenhockey.release.xcconfig"; path = "Target Support Files/Pods-womenhockey/Pods-womenhockey.release.xcconfig"; sourceTree = "<group>"; };
 		56287C698CB3890301CE70EE /* Pods-womenhockey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-womenhockey.debug.xcconfig"; path = "Target Support Files/Pods-womenhockey/Pods-womenhockey.debug.xcconfig"; sourceTree = "<group>"; };
 		B700E42021B0097DC86C46AD /* Pods_womenhockey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_womenhockey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81B338728F4F2A500C16324 /* MyCustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTabBar.swift; sourceTree = "<group>"; };
 		F83F161628CCF3F3005653F1 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		F845BF9F28CE149500B2AAEC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F845BFA228CE1A5C00B2AAEC /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				F8E02BE728CE8AD0005F03DA /* Game */,
 				F845BFA128CE1A4500B2AAEC /* Cells */,
 				047D76E728C69BF900729FF7 /* HomeViewController.swift */,
+				F81B338728F4F2A500C16324 /* MyCustomTabBar.swift */,
 				04BC384128C7FB3F000EA3FD /* BetsVC.swift */,
 				047D76D728C697FF00729FF7 /* HistoryViewController.swift */,
 				048D769828CA33E800FF1914 /* BetViewController.swift */,
@@ -348,6 +351,7 @@
 				04967D8428EE367900E1B2EF /* CompositionalLayoutE.swift in Sources */,
 				047D76D828C697FF00729FF7 /* HistoryViewController.swift in Sources */,
 				F8BE54C928CFC55000B74806 /* MyBetsViewController.swift in Sources */,
+				F81B338828F4F2A500C16324 /* MyCustomTabBar.swift in Sources */,
 				F8BE54C728CFC47200B74806 /* MyBetMainVC.swift in Sources */,
 				04A14CC828EF867D00032F08 /* TennisMatchViewController.swift in Sources */,
 				04967D8628EE3D9D00E1B2EF /* CompositionalLayout.swift in Sources */,
