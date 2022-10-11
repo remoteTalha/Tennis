@@ -1,0 +1,6 @@
+framework module Pods_womenhockey {
+  umbrella header "Pods-womenhockey-umbrella.h"
+
+  export *
+  module * { export * }
+}
