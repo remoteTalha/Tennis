@@ -23,6 +23,12 @@
 		449FD0BC28F6EE6F0044EF3A /* TennisNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449FD0B628F6EE6F0044EF3A /* TennisNotesVC.swift */; };
 		449FD0BD28F6EE6F0044EF3A /* TennisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449FD0B728F6EE6F0044EF3A /* TennisDetailViewController.swift */; };
 		DCE58B68FA060B50CCB860AC /* Pods_Tennis_interactive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD105EFE84DD8660D0D39D8 /* Pods_Tennis_interactive.framework */; };
+		F86E9F1F28FA51E50084AE6A /* NewsTennisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9F1E28FA51E50084AE6A /* NewsTennisViewController.swift */; };
+		F86E9F2128FA51EE0084AE6A /* NewsDatailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9F2028FA51EE0084AE6A /* NewsDatailViewController.swift */; };
+		F86E9F2428FA559F0084AE6A /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9F2328FA559F0084AE6A /* NewsCollectionViewCell.swift */; };
+		F86E9F2628FA5B320084AE6A /* NotesableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9F2528FA5B320084AE6A /* NotesableViewCell.swift */; };
+		F86E9F2828FA5CAC0084AE6A /* AddNewNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9F2728FA5CAC0084AE6A /* AddNewNoteVC.swift */; };
+		F86E9F2A28FA5CBA0084AE6A /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9F2928FA5CBA0084AE6A /* EditNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,12 @@
 		449FD0B728F6EE6F0044EF3A /* TennisDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TennisDetailViewController.swift; sourceTree = "<group>"; };
 		5845EAA512C6B2A9138F2571 /* Pods-Tennis interactive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tennis interactive.release.xcconfig"; path = "Target Support Files/Pods-Tennis interactive/Pods-Tennis interactive.release.xcconfig"; sourceTree = "<group>"; };
 		ABD105EFE84DD8660D0D39D8 /* Pods_Tennis_interactive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tennis_interactive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86E9F1E28FA51E50084AE6A /* NewsTennisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTennisViewController.swift; sourceTree = "<group>"; };
+		F86E9F2028FA51EE0084AE6A /* NewsDatailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDatailViewController.swift; sourceTree = "<group>"; };
+		F86E9F2328FA559F0084AE6A /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		F86E9F2528FA5B320084AE6A /* NotesableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesableViewCell.swift; sourceTree = "<group>"; };
+		F86E9F2728FA5CAC0084AE6A /* AddNewNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewNoteVC.swift; sourceTree = "<group>"; };
+		F86E9F2928FA5CBA0084AE6A /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,17 @@
 		449FD0AA28F6EE0E0044EF3A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F86E9F2228FA55860084AE6A /* Cells */,
+				F86E9F2028FA51EE0084AE6A /* NewsDatailViewController.swift */,
+				F86E9F1E28FA51E50084AE6A /* NewsTennisViewController.swift */,
 				449FD0B528F6EE6F0044EF3A /* MyCustomTabBar.swift */,
 				449FD0B228F6EE6E0044EF3A /* TennisCalanderVC.swift */,
 				449FD0B728F6EE6F0044EF3A /* TennisDetailViewController.swift */,
 				449FD0B328F6EE6E0044EF3A /* TennisInteractiveVC.swift */,
 				449FD0B428F6EE6F0044EF3A /* TennisMatchViewController.swift */,
 				449FD0B628F6EE6F0044EF3A /* TennisNotesVC.swift */,
+				F86E9F2728FA5CAC0084AE6A /* AddNewNoteVC.swift */,
+				F86E9F2928FA5CBA0084AE6A /* EditNoteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,6 +149,15 @@
 				ABD105EFE84DD8660D0D39D8 /* Pods_Tennis_interactive.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F86E9F2228FA55860084AE6A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F86E9F2328FA559F0084AE6A /* NewsCollectionViewCell.swift */,
+				F86E9F2528FA5B320084AE6A /* NotesableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,12 +279,18 @@
 				449FD0B128F6EE360044EF3A /* Configuration.swift in Sources */,
 				449FD0B028F6EE360044EF3A /* CompositionalLayout.swift in Sources */,
 				449FD09B28F6E27C0044EF3A /* ViewController.swift in Sources */,
+				F86E9F2A28FA5CBA0084AE6A /* EditNoteViewController.swift in Sources */,
+				F86E9F2428FA559F0084AE6A /* NewsCollectionViewCell.swift in Sources */,
 				449FD0BD28F6EE6F0044EF3A /* TennisDetailViewController.swift in Sources */,
 				449FD0BC28F6EE6F0044EF3A /* TennisNotesVC.swift in Sources */,
 				449FD0BB28F6EE6F0044EF3A /* MyCustomTabBar.swift in Sources */,
+				F86E9F2828FA5CAC0084AE6A /* AddNewNoteVC.swift in Sources */,
 				449FD0B928F6EE6F0044EF3A /* TennisInteractiveVC.swift in Sources */,
+				F86E9F2128FA51EE0084AE6A /* NewsDatailViewController.swift in Sources */,
+				F86E9F2628FA5B320084AE6A /* NotesableViewCell.swift in Sources */,
 				449FD0BA28F6EE6F0044EF3A /* TennisMatchViewController.swift in Sources */,
 				449FD0AF28F6EE360044EF3A /* CompositionalLayoutE.swift in Sources */,
+				F86E9F1F28FA51E50084AE6A /* NewsTennisViewController.swift in Sources */,
 				449FD09728F6E27C0044EF3A /* AppDelegate.swift in Sources */,
 				449FD09928F6E27C0044EF3A /* SceneDelegate.swift in Sources */,
 			);

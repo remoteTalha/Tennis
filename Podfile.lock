@@ -5,6 +5,9 @@ PODS:
   - KRActivityIndicatorView (3.0.7)
   - KRProgressHUD (3.4.7):
     - KRActivityIndicatorView (= 3.0.7)
+  - SDWebImage (5.13.4):
+    - SDWebImage/Core (= 5.13.4)
+  - SDWebImage/Core (5.13.4)
   - SwiftyJSON (5.0.1)
   - XLPagerTabStrip (9.0.0)
 
@@ -13,6 +16,7 @@ DEPENDENCIES:
   - FSCalendar
   - IQKeyboardManagerSwift
   - KRProgressHUD
+  - SDWebImage
   - SwiftyJSON
   - XLPagerTabStrip
 
@@ -23,6 +27,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - KRActivityIndicatorView
     - KRProgressHUD
+    - SDWebImage
     - SwiftyJSON
     - XLPagerTabStrip
 
@@ -32,9 +37,10 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
   KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
+  SDWebImage: e5cc87bf736e60f49592f307bdf9e157189298a3
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: 019c0798db58314978469f4634898464d0c5c324
+PODFILE CHECKSUM: 32d3ebcd368fd6cb97afcf5e3f78d3c7787df46d
 
 COCOAPODS: 1.11.3

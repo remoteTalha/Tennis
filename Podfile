@@ -12,4 +12,5 @@ pod 'SwiftyJSON'
 pod 'FSCalendar'
 pod 'XLPagerTabStrip'
 pod "KRProgressHUD"
+ pod 'SDWebImage'
 end
