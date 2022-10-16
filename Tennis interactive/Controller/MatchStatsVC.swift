@@ -13,6 +13,13 @@ import KRProgressHUD
 class MatchStatsVC: UIViewController {
     
     
+    @IBOutlet weak var homeTeamNameLbl: UILabel!
+    @IBOutlet weak var awayTeamNameLbl: UILabel!
+    @IBOutlet weak var startDateLbl: UILabel!
+    @IBOutlet weak var startTimeLbl: UILabel!
+    
+    
+    
     var homePlayerId = ""
     var awayPlayerId = ""
     var matchId = ""
@@ -23,10 +30,14 @@ class MatchStatsVC: UIViewController {
         self.getMatches(homePlayerid: self.homePlayerId, awayPlayerId: self.awayPlayerId)
     }
     
-    
+    @IBAction func backButton(sender:UIButton)  {
+        self.dismiss(animated: true)
+    }
     
     
 }
+
+
 extension MatchStatsVC {
     func getMatches(homePlayerid:String,awayPlayerId:String) {
         KRProgressHUD.show()

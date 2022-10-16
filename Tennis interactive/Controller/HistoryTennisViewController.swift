@@ -26,6 +26,10 @@ class HistoryTennisViewController: UIViewController {
         self.getMatches(id: teamId)
     }
     
+    @IBAction func backButton(sender:UIButton)  {
+        self.dismiss(animated: true)
+    }
+    
     
     
 }

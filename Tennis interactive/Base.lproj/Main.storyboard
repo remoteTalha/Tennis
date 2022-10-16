@@ -251,7 +251,7 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="59447  10" translatesAutoresizingMaskIntoConstraints="NO" id="25x-ax-4Qc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vX4-u4-JwI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vX4-u4-JwI">
                                 <rect key="frame" x="0.0" y="113" width="414" height="749"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.1764705882" green="0.21176470589999999" blue="0.2666666667" alpha="0.85831992040000005" colorSpace="calibratedRGB"/>
@@ -450,6 +450,9 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="Image 5"/>
+                                        <connections>
+                                            <action selector="backButtonWithSender:" destination="OsC-8H-coA" eventType="touchUpInside" id="PNN-Hr-3NW"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saf-5i-4s0">
                                         <rect key="frame" x="142.5" y="22" width="129.5" height="24"/>
@@ -530,31 +533,54 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6y-P1-Gy0">
                                                             <rect key="frame" x="28" y="11" width="358" height="71"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TennisBall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXA-Es-d0A">
-                                                                    <rect key="frame" x="8" y="25" width="77" height="21"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TenniBall" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR2-7G-7OT">
+                                                                    <rect key="frame" x="8" y="4" width="51" height="63"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="21" id="eSs-sH-l21"/>
+                                                                        <constraint firstAttribute="width" constant="51" id="yvV-Rx-Jg9"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGT-gA-xaO">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tennisBall" translatesAutoresizingMaskIntoConstraints="NO" id="crP-fR-9Ur">
+                                                                    <rect key="frame" x="67" y="14" width="58" height="43"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="43" id="lgk-9d-7W5"/>
+                                                                        <constraint firstAttribute="width" constant="58" id="wg3-7N-FI2"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tranings" translatesAutoresizingMaskIntoConstraints="NO" id="hLi-hO-Zko">
+                                                                    <rect key="frame" x="243" y="13.5" width="58" height="43"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="43" id="MxL-ra-CmU"/>
+                                                                        <constraint firstAttribute="width" constant="58" id="avl-Sg-K0n"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tranings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXc-Z4-p1u">
+                                                                    <rect key="frame" x="309" y="3" width="49" height="64"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="49" id="w12-wD-Xcr"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYS-JZ-x4y">
                                                                     <rect key="frame" x="143" y="25" width="72" height="20.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 oct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHR-qA-HfR">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 oct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AND-Jd-KPV">
                                                                             <rect key="frame" x="0.0" y="0.0" width="35" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZY-SP-cC5">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEV-RD-gU8">
                                                                             <rect key="frame" x="35" y="0.0" width="5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZp-jT-SYH">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWW-2Z-Vpk">
                                                                             <rect key="frame" x="40" y="0.0" width="32" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -562,45 +588,24 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tranings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkC-Vd-cXP">
-                                                                    <rect key="frame" x="284.5" y="25" width="65.5" height="21"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="21" id="ErN-5H-gTG"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tennisBall" translatesAutoresizingMaskIntoConstraints="NO" id="g7m-5l-oE0">
-                                                                    <rect key="frame" x="93" y="14" width="45" height="43"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="45" id="Ze8-iP-tp6"/>
-                                                                        <constraint firstAttribute="height" constant="43" id="oWO-Te-6zY"/>
-                                                                    </constraints>
-                                                                </imageView>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tennisBall" translatesAutoresizingMaskIntoConstraints="NO" id="HZP-So-r1a">
-                                                                    <rect key="frame" x="231" y="14" width="45" height="43"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="45" id="5lR-t4-CSL"/>
-                                                                        <constraint firstAttribute="height" constant="43" id="lQN-Gs-lum"/>
-                                                                    </constraints>
-                                                                </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.1764705882" green="0.21176470589999999" blue="0.2666666667" alpha="0.85831992040000005" colorSpace="calibratedRGB"/>
                                                             <constraints>
-                                                                <constraint firstItem="g7m-5l-oE0" firstAttribute="leading" secondItem="EXA-Es-d0A" secondAttribute="trailing" constant="8" id="4vG-OT-5Dq"/>
-                                                                <constraint firstItem="fGT-gA-xaO" firstAttribute="top" secondItem="y6y-P1-Gy0" secondAttribute="top" constant="25" id="8jd-Tf-pb6"/>
-                                                                <constraint firstItem="HZP-So-r1a" firstAttribute="centerY" secondItem="KkC-Vd-cXP" secondAttribute="centerY" id="Bxq-k9-mvX"/>
-                                                                <constraint firstItem="g7m-5l-oE0" firstAttribute="centerY" secondItem="EXA-Es-d0A" secondAttribute="centerY" id="Dnx-DX-FxM"/>
-                                                                <constraint firstItem="EXA-Es-d0A" firstAttribute="leading" secondItem="y6y-P1-Gy0" secondAttribute="leading" constant="8" id="Gde-a5-JqH"/>
-                                                                <constraint firstAttribute="bottom" secondItem="EXA-Es-d0A" secondAttribute="bottom" constant="25" id="ULT-YQ-UCl"/>
-                                                                <constraint firstItem="EXA-Es-d0A" firstAttribute="top" secondItem="y6y-P1-Gy0" secondAttribute="top" constant="25" id="WFP-QL-7Py"/>
-                                                                <constraint firstItem="KkC-Vd-cXP" firstAttribute="top" secondItem="y6y-P1-Gy0" secondAttribute="top" constant="25" id="l5g-68-PjP"/>
-                                                                <constraint firstAttribute="trailing" secondItem="KkC-Vd-cXP" secondAttribute="trailing" constant="8" id="pLf-ak-hf6"/>
-                                                                <constraint firstItem="fGT-gA-xaO" firstAttribute="centerX" secondItem="y6y-P1-Gy0" secondAttribute="centerX" id="uYy-Bk-ccM"/>
-                                                                <constraint firstAttribute="bottom" secondItem="KkC-Vd-cXP" secondAttribute="bottom" constant="25" id="v6O-Qc-YuI"/>
-                                                                <constraint firstItem="KkC-Vd-cXP" firstAttribute="leading" secondItem="HZP-So-r1a" secondAttribute="trailing" constant="8.5" id="vv8-gj-CKk"/>
+                                                                <constraint firstItem="uYS-JZ-x4y" firstAttribute="centerX" secondItem="y6y-P1-Gy0" secondAttribute="centerX" id="0AK-9u-xgI"/>
+                                                                <constraint firstAttribute="bottom" secondItem="dR2-7G-7OT" secondAttribute="bottom" constant="4" id="9tJ-2I-Fsf"/>
+                                                                <constraint firstAttribute="bottom" secondItem="eXc-Z4-p1u" secondAttribute="bottom" constant="4" id="D3H-je-SEZ"/>
+                                                                <constraint firstItem="hLi-hO-Zko" firstAttribute="leading" secondItem="uYS-JZ-x4y" secondAttribute="trailing" constant="28" id="ECb-h0-PI6"/>
+                                                                <constraint firstItem="crP-fR-9Ur" firstAttribute="leading" secondItem="dR2-7G-7OT" secondAttribute="trailing" constant="8" id="aLK-e4-uC5"/>
+                                                                <constraint firstItem="dR2-7G-7OT" firstAttribute="top" secondItem="y6y-P1-Gy0" secondAttribute="top" constant="4" id="auj-dc-odg"/>
+                                                                <constraint firstAttribute="trailing" secondItem="eXc-Z4-p1u" secondAttribute="trailing" id="cQ5-Ko-Qn4"/>
+                                                                <constraint firstItem="eXc-Z4-p1u" firstAttribute="leading" secondItem="hLi-hO-Zko" secondAttribute="trailing" constant="8" id="fdP-Sp-EB1"/>
+                                                                <constraint firstItem="dR2-7G-7OT" firstAttribute="leading" secondItem="y6y-P1-Gy0" secondAttribute="leading" constant="8" id="lbZ-fh-yAY"/>
+                                                                <constraint firstItem="uYS-JZ-x4y" firstAttribute="leading" secondItem="crP-fR-9Ur" secondAttribute="trailing" constant="18" id="lpW-Xl-3bg"/>
+                                                                <constraint firstItem="uYS-JZ-x4y" firstAttribute="top" secondItem="y6y-P1-Gy0" secondAttribute="top" constant="25" id="mEw-AT-84o"/>
+                                                                <constraint firstItem="hLi-hO-Zko" firstAttribute="centerY" secondItem="eXc-Z4-p1u" secondAttribute="centerY" id="mdO-IG-xjb"/>
+                                                                <constraint firstItem="eXc-Z4-p1u" firstAttribute="top" secondItem="y6y-P1-Gy0" secondAttribute="top" constant="3" id="rLg-Pw-oCY"/>
                                                                 <constraint firstAttribute="height" constant="71" id="wUa-t4-jqJ"/>
+                                                                <constraint firstItem="crP-fR-9Ur" firstAttribute="centerY" secondItem="dR2-7G-7OT" secondAttribute="centerY" id="zbf-AJ-vzR"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
@@ -612,19 +617,19 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="slR-y7-TBg">
                                                             <rect key="frame" x="184.5" y="61" width="45.5" height="23"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMB-26-s4C">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMB-26-s4C">
                                                                     <rect key="frame" x="0.0" y="0.0" width="11.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                     <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om1-dx-67c">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om1-dx-67c">
                                                                     <rect key="frame" x="19.5" y="0.0" width="6.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                                                     <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-Ae-oyk">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-Ae-oyk">
                                                                     <rect key="frame" x="34" y="0.0" width="11.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                     <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -646,11 +651,11 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                 <color key="backgroundColor" red="0.1764705882" green="0.21176470589999999" blue="0.2666666667" alpha="0.85831992040000005" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <outlet property="awayTeamGoals" destination="Kfk-Ae-oyk" id="mkY-VK-IPy"/>
-                                                    <outlet property="awayTeamName" destination="KkC-Vd-cXP" id="d4r-5A-Ua2"/>
+                                                    <outlet property="awayTeamName" destination="eXc-Z4-p1u" id="xnz-kC-mfK"/>
                                                     <outlet property="homeTeamGoals" destination="JMB-26-s4C" id="91w-ks-qoe"/>
-                                                    <outlet property="homeTeamName" destination="EXA-Es-d0A" id="FXm-SW-Poc"/>
-                                                    <outlet property="startDate" destination="wHR-qA-HfR" id="gtY-kN-vdX"/>
-                                                    <outlet property="startTime" destination="mZp-jT-SYH" id="w5n-bw-nfO"/>
+                                                    <outlet property="homeTeamName" destination="dR2-7G-7OT" id="GiA-gG-Rzl"/>
+                                                    <outlet property="startDate" destination="AND-Jd-KPV" id="BBg-TV-DD2"/>
+                                                    <outlet property="startTime" destination="RWW-2Z-Vpk" id="Bvh-bk-pES"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -994,13 +999,13 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                                             <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGb-Va-utT">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGb-Va-utT">
                                                                             <rect key="frame" x="19.5" y="0.0" width="6.5" height="23"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                                                             <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7w-Xa-PXp">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7w-Xa-PXp">
                                                                             <rect key="frame" x="34" y="0.0" width="11.5" height="23"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                             <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -1821,10 +1826,133 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29b-pg-AJH">
+                                <rect key="frame" x="0.0" y="610" width="414" height="252"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LGF-u2-iHi">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="252"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="iox-hD-ZKb">
+                                                <rect key="frame" x="0.0" y="50" width="414" height="93"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iox-hD-ZKb" id="U6l-Gt-o8W">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A22-uq-FWx">
+                                                            <rect key="frame" x="28" y="11" width="358" height="71"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TenniBall" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-xb-M7L">
+                                                                    <rect key="frame" x="8" y="4" width="51" height="63"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="51" id="MbT-KY-Qxe"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tennisBall" translatesAutoresizingMaskIntoConstraints="NO" id="GcA-QK-Wya">
+                                                                    <rect key="frame" x="67" y="14" width="58" height="43"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="43" id="0GQ-Js-otA"/>
+                                                                        <constraint firstAttribute="width" constant="58" id="xes-P6-W7j"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tranings" translatesAutoresizingMaskIntoConstraints="NO" id="aTB-GA-Ozh">
+                                                                    <rect key="frame" x="243" y="13.5" width="58" height="43"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="58" id="qF5-k1-LD1"/>
+                                                                        <constraint firstAttribute="height" constant="43" id="sy6-PL-nqT"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tranings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65U-DA-ZjU">
+                                                                    <rect key="frame" x="309" y="3" width="49" height="64"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="49" id="qve-uz-JjX"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McS-8C-TWz">
+                                                                    <rect key="frame" x="143" y="25" width="72" height="20.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 oct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-aR-Wh7">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="35" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53p-0z-i38">
+                                                                            <rect key="frame" x="35" y="0.0" width="5" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-Ur-bIE">
+                                                                            <rect key="frame" x="40" y="0.0" width="32" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.1764705882" green="0.21176470589999999" blue="0.2666666667" alpha="0.85831992040000005" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="cdb-xb-M7L" firstAttribute="top" secondItem="A22-uq-FWx" secondAttribute="top" constant="4" id="58G-YM-N69"/>
+                                                                <constraint firstItem="GcA-QK-Wya" firstAttribute="leading" secondItem="cdb-xb-M7L" secondAttribute="trailing" constant="8" id="BkB-N1-A8s"/>
+                                                                <constraint firstItem="aTB-GA-Ozh" firstAttribute="centerY" secondItem="65U-DA-ZjU" secondAttribute="centerY" id="D5W-0N-VU4"/>
+                                                                <constraint firstItem="McS-8C-TWz" firstAttribute="centerX" secondItem="A22-uq-FWx" secondAttribute="centerX" id="XqA-58-Sw1"/>
+                                                                <constraint firstItem="GcA-QK-Wya" firstAttribute="centerY" secondItem="cdb-xb-M7L" secondAttribute="centerY" id="gBq-5P-633"/>
+                                                                <constraint firstItem="65U-DA-ZjU" firstAttribute="leading" secondItem="aTB-GA-Ozh" secondAttribute="trailing" constant="8" id="h9R-pO-Ql0"/>
+                                                                <constraint firstAttribute="bottom" secondItem="cdb-xb-M7L" secondAttribute="bottom" constant="4" id="ioK-k3-Ezj"/>
+                                                                <constraint firstAttribute="trailing" secondItem="65U-DA-ZjU" secondAttribute="trailing" id="ivO-xf-5he"/>
+                                                                <constraint firstItem="McS-8C-TWz" firstAttribute="top" secondItem="A22-uq-FWx" secondAttribute="top" constant="25" id="nox-Zi-jDS"/>
+                                                                <constraint firstAttribute="height" constant="71" id="sTf-eE-CNQ"/>
+                                                                <constraint firstItem="65U-DA-ZjU" firstAttribute="top" secondItem="A22-uq-FWx" secondAttribute="top" constant="3" id="sd4-zy-4qQ"/>
+                                                                <constraint firstItem="cdb-xb-M7L" firstAttribute="leading" secondItem="A22-uq-FWx" secondAttribute="leading" constant="8" id="tbh-Rp-Jex"/>
+                                                                <constraint firstAttribute="bottom" secondItem="65U-DA-ZjU" secondAttribute="bottom" constant="4" id="ulw-xa-pxF"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="15"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.1764705882" green="0.21176470589999999" blue="0.2666666667" alpha="0.85831992040000005" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="A22-uq-FWx" secondAttribute="trailing" constant="8" id="6G3-OY-VuY"/>
+                                                        <constraint firstItem="A22-uq-FWx" firstAttribute="leading" secondItem="U6l-Gt-o8W" secondAttribute="leadingMargin" constant="8" id="UYN-wy-h7A"/>
+                                                        <constraint firstItem="A22-uq-FWx" firstAttribute="top" secondItem="U6l-Gt-o8W" secondAttribute="topMargin" id="nYP-vu-Eo6"/>
+                                                        <constraint firstItem="A22-uq-FWx" firstAttribute="bottom" secondItem="U6l-Gt-o8W" secondAttribute="bottomMargin" id="pmy-MB-IuF"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.1764705882" green="0.21176470589999999" blue="0.2666666667" alpha="0.85831992040000005" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <outlet property="awayTeamName" destination="65U-DA-ZjU" id="JNH-lP-B94"/>
+                                                    <outlet property="homeTeamName" destination="cdb-xb-M7L" id="xOf-IQ-ONe"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LGF-u2-iHi" firstAttribute="leading" secondItem="29b-pg-AJH" secondAttribute="leading" id="7XT-DQ-Fe2"/>
+                                    <constraint firstItem="LGF-u2-iHi" firstAttribute="top" secondItem="29b-pg-AJH" secondAttribute="top" id="Twt-NZ-kdh"/>
+                                    <constraint firstAttribute="bottom" secondItem="LGF-u2-iHi" secondAttribute="bottom" id="YYk-WC-xqy"/>
+                                    <constraint firstAttribute="trailing" secondItem="LGF-u2-iHi" secondAttribute="trailing" id="hpH-kB-bpW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2gU-4Q-HAZ"/>
                         <color key="backgroundColor" red="0.1764705882" green="0.21176470589999999" blue="0.2666666667" alpha="0.85831992040000005" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="29b-pg-AJH" firstAttribute="top" secondItem="PSU-Ul-65H" secondAttribute="bottom" constant="60" id="1YW-L2-Gj0"/>
                             <constraint firstItem="J8t-R7-5pa" firstAttribute="trailing" secondItem="2gU-4Q-HAZ" secondAttribute="trailing" id="1gY-fa-dIc"/>
                             <constraint firstItem="yLB-50-hNN" firstAttribute="leading" secondItem="2gU-4Q-HAZ" secondAttribute="leading" constant="50" id="461-Vl-kBy"/>
                             <constraint firstItem="PSU-Ul-65H" firstAttribute="centerX" secondItem="Px3-DL-Cla" secondAttribute="centerX" id="7It-gS-v1r"/>
@@ -1833,17 +1961,23 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                             <constraint firstItem="J8t-R7-5pa" firstAttribute="top" secondItem="2gU-4Q-HAZ" secondAttribute="top" id="KSy-bT-ZuB"/>
                             <constraint firstItem="FMv-Gb-NOs" firstAttribute="top" secondItem="Px3-DL-Cla" secondAttribute="top" id="Lpe-A2-vdH"/>
                             <constraint firstAttribute="trailing" secondItem="FMv-Gb-NOs" secondAttribute="trailing" id="PRU-8C-nEO"/>
+                            <constraint firstItem="2gU-4Q-HAZ" firstAttribute="bottom" secondItem="29b-pg-AJH" secondAttribute="bottom" id="S6s-RL-aEG"/>
                             <constraint firstItem="J8t-R7-5pa" firstAttribute="leading" secondItem="2gU-4Q-HAZ" secondAttribute="leading" id="T6v-79-cat"/>
+                            <constraint firstItem="29b-pg-AJH" firstAttribute="leading" secondItem="2gU-4Q-HAZ" secondAttribute="leading" id="UzR-SD-8OI"/>
                             <constraint firstAttribute="bottom" secondItem="FMv-Gb-NOs" secondAttribute="bottom" id="Vwc-gi-t4C"/>
                             <constraint firstItem="2gU-4Q-HAZ" firstAttribute="trailing" secondItem="yLB-50-hNN" secondAttribute="trailing" constant="50" id="X33-p7-HVB"/>
+                            <constraint firstItem="2gU-4Q-HAZ" firstAttribute="trailing" secondItem="29b-pg-AJH" secondAttribute="trailing" id="aYl-0A-uZI"/>
                             <constraint firstItem="FMv-Gb-NOs" firstAttribute="leading" secondItem="2gU-4Q-HAZ" secondAttribute="leading" id="cKk-Ne-GBl"/>
                             <constraint firstItem="yLB-50-hNN" firstAttribute="width" secondItem="yLB-50-hNN" secondAttribute="height" multiplier="374:395" id="mlT-e9-U3r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calendar" destination="yLB-50-hNN" id="tDc-zO-1tz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dke-lh-KG4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-971" y="2757"/>
+            <point key="canvasLocation" x="-971.01449275362324" y="2756.9196428571427"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="3oc-8W-i9K">
@@ -2169,6 +2303,9 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="Image 5"/>
+                                        <connections>
+                                            <action selector="backButtonWithSender:" destination="Z46-0f-2BS" eventType="touchUpInside" id="Pwp-wS-eFh"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistic match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EF5-6N-VvW">
                                         <rect key="frame" x="138" y="22" width="138" height="24"/>
@@ -2205,9 +2342,11 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOY-cp-sxd">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="71"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TennisBall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixw-Oq-sAm">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TennisBall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixw-Oq-sAm">
                                                                 <rect key="frame" x="8" y="25" width="57.5" height="21"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="687-Hr-cdV"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2244,7 +2383,7 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="tennisBall" translatesAutoresizingMaskIntoConstraints="NO" id="PkZ-mW-04t">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tennisBall" translatesAutoresizingMaskIntoConstraints="NO" id="PkZ-mW-04t">
                                                                 <rect key="frame" x="73.5" y="14" width="45" height="43"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="43" id="YNf-ik-EfL"/>
@@ -2262,9 +2401,15 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="FeQ-GC-PjR" firstAttribute="top" secondItem="dOY-cp-sxd" secondAttribute="top" constant="25" id="24l-cT-73X"/>
+                                                            <constraint firstItem="ixw-Oq-sAm" firstAttribute="top" secondItem="dOY-cp-sxd" secondAttribute="top" constant="25" id="464-yX-xQ7"/>
                                                             <constraint firstItem="vvs-20-SyH" firstAttribute="top" secondItem="dOY-cp-sxd" secondAttribute="top" constant="25" id="8ZA-ar-amF"/>
                                                             <constraint firstAttribute="height" constant="71" id="EIy-zv-v1V"/>
+                                                            <constraint firstItem="ixw-Oq-sAm" firstAttribute="leading" secondItem="dOY-cp-sxd" secondAttribute="leading" constant="8" id="YLX-zN-m7p"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ixw-Oq-sAm" secondAttribute="bottom" constant="25" id="bJi-MH-AB8"/>
                                                             <constraint firstItem="FeQ-GC-PjR" firstAttribute="centerX" secondItem="dOY-cp-sxd" secondAttribute="centerX" id="bLJ-Ce-T9t"/>
+                                                            <constraint firstItem="PkZ-mW-04t" firstAttribute="centerY" secondItem="ixw-Oq-sAm" secondAttribute="centerY" id="c3n-mG-Xpo"/>
+                                                            <constraint firstItem="FeQ-GC-PjR" firstAttribute="leading" secondItem="PkZ-mW-04t" secondAttribute="trailing" constant="2.5" id="cP7-Dc-b3o"/>
+                                                            <constraint firstItem="PkZ-mW-04t" firstAttribute="leading" secondItem="ixw-Oq-sAm" secondAttribute="trailing" constant="8" id="da8-yn-ysu"/>
                                                             <constraint firstAttribute="bottom" secondItem="vvs-20-SyH" secondAttribute="bottom" constant="25" id="i0r-Um-AzM"/>
                                                             <constraint firstItem="gG4-g1-O4q" firstAttribute="centerY" secondItem="vvs-20-SyH" secondAttribute="centerY" id="kjC-7q-DCe"/>
                                                             <constraint firstItem="vvs-20-SyH" firstAttribute="leading" secondItem="gG4-g1-O4q" secondAttribute="trailing" constant="8.5" id="qGV-up-zJM"/>
@@ -2277,8 +2422,8 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a5L-Dw-cLR">
-                                                        <rect key="frame" x="135" y="79" width="45.5" height="23"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a5L-Dw-cLR">
+                                                        <rect key="frame" x="134.5" y="79" width="45.5" height="23"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djp-8D-fd4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="11.5" height="23"/>
@@ -2298,75 +2443,6 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjM-Ey-yep">
                                                                 <rect key="frame" x="34" y="0.0" width="11.5" height="23"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vqb-zi-U4f">
-                                                        <rect key="frame" x="135" y="110" width="40" height="14.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRW-KW-aFs">
-                                                                <rect key="frame" x="0.0" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZy-jF-64e">
-                                                                <rect key="frame" x="16" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHL-VG-sIH">
-                                                                <rect key="frame" x="32" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IkT-bO-MPZ">
-                                                        <rect key="frame" x="135" y="128" width="40" height="14.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwQ-pr-StD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvt-ng-LG0">
-                                                                <rect key="frame" x="16" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxo-wf-SlZ">
-                                                                <rect key="frame" x="32" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XUt-Em-26k">
-                                                        <rect key="frame" x="135" y="146" width="40" height="14.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxa-fQ-Cxb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbO-Nm-Gen">
-                                                                <rect key="frame" x="16" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                                                                <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-ly-MjM">
-                                                                <rect key="frame" x="32" y="0.0" width="8" height="14.5"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
                                                                 <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -2404,6 +2480,8 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                     <constraint firstAttribute="height" constant="250" id="8lN-DT-DgD"/>
                                                     <constraint firstItem="dOY-cp-sxd" firstAttribute="leading" secondItem="KhX-dJ-v3F" secondAttribute="leading" id="JBX-78-Ju3"/>
                                                     <constraint firstAttribute="trailing" secondItem="dOY-cp-sxd" secondAttribute="trailing" id="MOL-Ba-M3H"/>
+                                                    <constraint firstItem="a5L-Dw-cLR" firstAttribute="centerX" secondItem="KhX-dJ-v3F" secondAttribute="centerX" id="PPc-ct-pq7"/>
+                                                    <constraint firstItem="a5L-Dw-cLR" firstAttribute="top" secondItem="dOY-cp-sxd" secondAttribute="bottom" constant="8" id="PXM-kO-HAO"/>
                                                     <constraint firstAttribute="bottom" secondItem="wHS-UL-jqJ" secondAttribute="bottom" constant="20" id="cML-eq-EOh"/>
                                                     <constraint firstAttribute="trailing" secondItem="wHS-UL-jqJ" secondAttribute="trailing" constant="16" id="qAq-rg-ees"/>
                                                     <constraint firstItem="wHS-UL-jqJ" firstAttribute="leading" secondItem="KhX-dJ-v3F" secondAttribute="leading" constant="16" id="qhV-g4-Y4O"/>
