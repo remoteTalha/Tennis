@@ -6,6 +6,9 @@
 //
 
 import UIKit
+protocol NotesSaved {
+    func noteCreated(notes:[String])
+}
 
 class AddNewNoteVC: UIViewController {
 
@@ -14,11 +17,14 @@ class AddNewNoteVC: UIViewController {
     @IBOutlet weak var desc: UITextView!
     
     var notes = [String]()
+    var createNotesDelegate : NotesSaved? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let note = UserDefaults.standard.object(forKey: "Notes") {
+            self.notes = note as! Array
+        }
     }
     
 
@@ -36,6 +42,7 @@ class AddNewNoteVC: UIViewController {
             let note = "\(self.titleField.text!)space\(self.desc.text!)"
             self.notes.append(note)
             UserDefaults.standard.set(self.notes, forKey: "Notes")
+            self.createNotesDelegate?.noteCreated(notes: self.notes)
             self.dismiss(animated: true)
         }
     }

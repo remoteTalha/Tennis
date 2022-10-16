@@ -33,7 +33,7 @@ class MyCustomTabBar: UIViewController {
     static let fourthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TennisNotesVC")
     
     static let fifthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TennisCalanderVC")
-    static let sixthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TennisInteractiveVC")
+    static let sixthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GameViewController")
     
     override func viewDidLoad() {
         super.viewDidLoad()

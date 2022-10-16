@@ -12,11 +12,17 @@ class EditNoteViewController: UIViewController {
     
      @IBOutlet weak var titleField: UITextField!
      @IBOutlet weak var desc: UITextView!
-     
+     var note = [String]()
+     var index = 0
+     var editNotesDelegate : NotesSaved? = nil
+    
      override func viewDidLoad() {
          super.viewDidLoad()
 
-         // Do any additional setup after loading the view.
+         let note = self.note[index]
+         let sepr = note.components(separatedBy: "space")
+         self.titleField.text = sepr[0]
+         self.desc.text = sepr[1]
      }
      
 
@@ -28,6 +34,15 @@ class EditNoteViewController: UIViewController {
          self.dismiss(animated: true)
      }
      @IBAction func addNote(_ sender: Any) {
+         if titleField.text == "" || desc.text == "" {
+             simpleAlert("Enter title and description")
+         }else {
+             let note = "\(self.titleField.text!)space\(self.desc.text!)"
+             self.note[index] = note
+             UserDefaults.standard.set(self.note, forKey: "Notes")
+             self.editNotesDelegate?.noteCreated(notes: self.note)
+             self.dismiss(animated: true)
+         }
      }
 
 }

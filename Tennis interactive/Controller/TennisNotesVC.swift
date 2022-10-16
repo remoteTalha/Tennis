@@ -7,7 +7,9 @@
 
 import UIKit
 
-class TennisNotesVC: UIViewController {
+class TennisNotesVC: UIViewController ,NotesSaved{
+   
+    
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,9 +29,14 @@ class TennisNotesVC: UIViewController {
             self.notes = note as! Array
         }
     }
-    
+    //delegate for backward data handling
+    func noteCreated(notes:[String]) {
+        self.notes = notes
+        self.tableView.reloadData()
+    }
     @IBAction func addNotes(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "AddNewNoteVC") as! AddNewNoteVC
+        vc.createNotesDelegate = self
         self.present(vc, animated: true)
     }
     
@@ -52,5 +59,18 @@ extension TennisNotesVC : UITableViewDataSource,UITableViewDelegate {
         return UITableView.automaticDimension
     }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete{
+            notes.remove(at: indexPath.row)
+            tableView.reloadData()
+            UserDefaults.standard.set(notes, forKey: "Notes")
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "EditNoteViewController") as! EditNoteViewController
+            vc.note = notes
+            vc.index = indexPath.row
+            vc.editNotesDelegate = self
+        self.present(vc, animated: true)
+    }
 }
