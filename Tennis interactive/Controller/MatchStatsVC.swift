@@ -6,24 +6,70 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import KRProgressHUD
 
 class MatchStatsVC: UIViewController {
-
+    
+    
+    var homePlayerId = ""
+    var awayPlayerId = ""
+    var matchId = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.getMatches(homePlayerid: self.homePlayerId, awayPlayerId: self.awayPlayerId)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    
+}
+extension MatchStatsVC {
+    func getMatches(homePlayerid:String,awayPlayerId:String) {
+        KRProgressHUD.show()
+        Alamofire.request("https://api.sportradar.com/tennis/trial/v3/en/competitors/\(homePlayerid)/versus/\(awayPlayerId)/summaries.json?api_key=v5mprf2qxypr3vveem32tq6d", method: .get, encoding: JSONEncoding.default, headers: HEADER).responseJSON { response in
+            if response.result.isSuccess {
+                let data : JSON = JSON(response.result.value!)
+                print(data)
+                self.parseMatches(json: data)
+            }else {
+                KRProgressHUD.dismiss()
+            }
+        }
     }
-    */
 
+    // hitting the firstpitch, winning the first serve,second serve,ace,double mistakes
+    
+    func parseMatches(json:JSON) {
+        
+        let totalMathes =  json["last_meetings"].array ?? []
+        for match in totalMathes {
+            if match["sport_event"]["id"].string == self.matchId {
+                
+                let stadiumName = match["sport_event"]["venue"]["name"].string ?? ""
+                let countryName = match["sport_event"]["venue"]["country_name"].string ?? ""
+                let matchStartTime = match["sport_event"]["start_time"].string ?? ""
+                
+                let homeTeamName  = match["sport_event"]["competitors"][0]["name"].string ?? ""
+                let homeTeamGoal = match["sport_event_status"]["home_score"].int ?? 0
+                let homeTeamAce = match["statistics"]["totals"]["competitors"][0]["statistics"]["aces"].string ?? ""
+                let homeDoubleMistakes = match["statistics"]["totals"]["competitors"][0]["statistics"]["double_faults"].string ?? ""
+                let homeFirstServe = match["statistics"]["totals"]["competitors"][0]["statistics"]["first_serve_successful"].string ?? ""
+                let homeSecondServe = match["statistics"]["totals"]["competitors"][0]["statistics"]["second_serve_successful"].string ?? ""
+                
+                let awayFirstServe = match["statistics"]["totals"]["competitors"][1]["statistics"]["first_serve_successful"].string ?? ""
+                let awaySeccondServe = match["statistics"]["totals"]["competitors"][1]["statistics"]["second_serve_successful"].string ?? ""
+                let awayDoubleMistakes = match["statistics"]["totals"]["competitors"][1]["statistics"]["double_faults"].string ?? ""
+                let awayTeamAce = match["statistics"]["totals"]["competitors"][1]["statistics"]["aces"].string ?? ""
+                let awayTeamGoal  = match["sport_event_status"]["away_score"].int ?? 0
+                let awayTeamName  = match["sport_event"]["competitors"][1]["name"].string ?? ""
+              
+                KRProgressHUD.dismiss()
+            }
+        }
+        
+    }
 }

@@ -22,7 +22,7 @@ class TennisMatchViewController: UIViewController {
         matchTableView.dataSource = self
         let date = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
+        formatter.dateFormat = "yyyy-MM-dd"
         let someDateTime = formatter.string(from: date)
         self.currentDate = someDateTime
         getMatches(date:someDateTime)
@@ -61,11 +61,11 @@ extension TennisMatchViewController: UITableViewDataSource {
 extension TennisMatchViewController {
     func getMatches(date:String) {
         KRProgressHUD.show()
-        Alamofire.request("https://tennisapi1.p.rapidapi.com/api/tennis/events/\(date)", method: .get, encoding: JSONEncoding.default, headers: HEADER).responseJSON { response in
+        Alamofire.request("https://api.sportradar.com/tennis/trial/v3/en/schedules/\(date)/summaries.json?api_key=v5mprf2qxypr3vveem32tq6d", method: .get, encoding: JSONEncoding.default, headers: HEADER).responseJSON { response in
             if response.result.isSuccess {
                 let data : JSON = JSON(response.result.value!)
                 //print(data)
-                self.parseMatches(json: data["events"])
+                self.parseMatches(json: data["summaries"])
             }else {
                 KRProgressHUD.dismiss()
             }
@@ -73,15 +73,17 @@ extension TennisMatchViewController {
     }
     func parseMatches(json:JSON) {
         for item in json {
-            if item.1["status"]["type"].string ?? "" == "notstarted" {
-                let matchId : Int = item.1["id"].int ?? 0
-                let homeTeamId : Int = item.1["homeTeam"]["id"].int ?? 0
-                let homeTeamName : String = item.1["homeTeam"]["name"].string ?? ""
-                // let homeTeamImage : String = item.1["homeTeam"][""].string ?? ""
-                let awayTeamId : Int = item.1["awayTeam"]["id"].int ?? 0
-                let awayTeamName : String = item.1["awayTeam"]["name"].string ?? ""
-                //    let awayTeamImage : String = item.1[].string ?? ""
-                let matchStartTime:Int = item.1["startTimestamp"].int ?? 0
+            if item.1["sport_event_status"]["status"].string ?? "" == "not_started" {
+                let matchId  = item.1["sport_event"]["id"].string ?? ""
+                
+                let homeTeamId = item.1["sport_event"]["competitors"][0]["id"].string ?? ""
+                let homeTeamName : String = item.1["sport_event"]["competitors"][0]["name"].string ?? ""
+               
+                
+                let awayTeamId  = item.1["sport_event"]["competitors"][1]["id"].string ?? ""
+                let awayTeamName : String = item.1["sport_event"]["competitors"][1]["name"].string ?? ""
+                
+                let matchStartTime = item.1["sport_event"]["start_time"].string ?? ""
                 
                 let matchData = Match(matchId: matchId, homeTeamId: homeTeamId, homeTeamName: homeTeamName, awayTeamId: awayTeamId, awayTeamName: awayTeamName, matchStartTime: matchStartTime, matchDay: self.currentDate)
                 self.match.append(matchData)
@@ -94,13 +96,13 @@ extension TennisMatchViewController {
 }
 
 struct Match {
-    let matchId : Int
-    let homeTeamId : Int
+    let matchId : String
+    let homeTeamId : String
     let homeTeamName : String
- //   let homeTeamImage : String
-    let awayTeamId : Int
+
+    let awayTeamId : String
     let awayTeamName : String
- //   let awayTeamImage : String
-    let matchStartTime:Int
+
+    let matchStartTime:String
     let matchDay : String
 }

@@ -266,48 +266,58 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jQ-4E-jZh">
                                                     <rect key="frame" x="20" y="8" width="374" height="80"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TenniBall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0U-sX-pT0">
-                                                            <rect key="frame" x="16" y="30" width="68.5" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TenniBall" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0U-sX-pT0">
+                                                            <rect key="frame" x="16" y="8" width="51" height="64"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="tPd-RX-VkX"/>
+                                                                <constraint firstAttribute="width" constant="51" id="8zQ-tJ-5wK"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tennisBall" translatesAutoresizingMaskIntoConstraints="NO" id="LY9-Wy-qf4">
-                                                            <rect key="frame" x="92.5" y="19" width="58" height="43"/>
+                                                            <rect key="frame" x="75" y="18.5" width="58" height="43"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="43" id="hfk-XF-fLc"/>
                                                                 <constraint firstAttribute="width" constant="58" id="ksE-Ji-uTE"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HQT-rS-uup">
-                                                            <rect key="frame" x="179.5" y="30" width="15.5" height="14.5"/>
+                                                            <rect key="frame" x="172" y="30" width="30" height="20"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noM-rF-NNH">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="15.5" height="14.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="20"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="Ft0-LE-nDt"/>
+                                                                <constraint firstAttribute="height" constant="20" id="e4D-dz-rSE"/>
+                                                            </constraints>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tranings" translatesAutoresizingMaskIntoConstraints="NO" id="e65-P1-HC4">
-                                                            <rect key="frame" x="226.5" y="18.5" width="58" height="43"/>
+                                                            <rect key="frame" x="243.5" y="18.5" width="58" height="43"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="43" id="2EV-V9-xuN"/>
                                                                 <constraint firstAttribute="width" constant="58" id="3nA-dE-Fkj"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tranings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoT-oo-Hsq">
-                                                            <rect key="frame" x="292.5" y="30" width="65.5" height="20"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tranings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoT-oo-Hsq">
+                                                            <rect key="frame" x="313" y="8" width="49" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="49" id="TGg-SU-7A0"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Oct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uri-qY-Dn0">
-                                                            <rect key="frame" x="169.5" y="45.5" width="35.5" height="13.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Oct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uri-qY-Dn0">
+                                                            <rect key="frame" x="143" y="50" width="90.5" height="13.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="13.5" id="K2T-DW-bQO"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -315,21 +325,22 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.1764705882" green="0.21176470589999999" blue="0.2666666667" alpha="0.85831992040000005" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="HQT-rS-uup" firstAttribute="centerX" secondItem="5jQ-4E-jZh" secondAttribute="centerX" id="1zh-8G-A4e"/>
-                                                        <constraint firstItem="e65-P1-HC4" firstAttribute="centerY" secondItem="WoT-oo-Hsq" secondAttribute="centerY" id="524-ZK-Yet"/>
-                                                        <constraint firstItem="a0U-sX-pT0" firstAttribute="leading" secondItem="5jQ-4E-jZh" secondAttribute="leading" constant="16" id="6i9-Fa-leK"/>
+                                                        <constraint firstItem="WoT-oo-Hsq" firstAttribute="leading" secondItem="e65-P1-HC4" secondAttribute="trailing" constant="11.5" id="2VZ-37-mnC"/>
                                                         <constraint firstAttribute="height" constant="80" id="8OB-zZ-xfP"/>
-                                                        <constraint firstAttribute="bottom" secondItem="WoT-oo-Hsq" secondAttribute="bottom" constant="30" id="9a8-eW-sj6"/>
-                                                        <constraint firstAttribute="bottom" secondItem="a0U-sX-pT0" secondAttribute="bottom" constant="29" id="CDi-kr-xp0"/>
-                                                        <constraint firstItem="Uri-qY-Dn0" firstAttribute="centerX" secondItem="5jQ-4E-jZh" secondAttribute="centerX" id="PCY-WV-zqf"/>
-                                                        <constraint firstItem="HQT-rS-uup" firstAttribute="top" secondItem="5jQ-4E-jZh" secondAttribute="top" constant="30" id="bk0-UA-bjd"/>
-                                                        <constraint firstItem="LY9-Wy-qf4" firstAttribute="leading" secondItem="a0U-sX-pT0" secondAttribute="trailing" constant="8" id="eup-FJ-woW"/>
-                                                        <constraint firstAttribute="trailing" secondItem="WoT-oo-Hsq" secondAttribute="trailing" constant="16" id="f27-vH-YzZ"/>
-                                                        <constraint firstItem="a0U-sX-pT0" firstAttribute="top" secondItem="5jQ-4E-jZh" secondAttribute="top" constant="30" id="ha7-bt-EEZ"/>
-                                                        <constraint firstItem="Uri-qY-Dn0" firstAttribute="top" secondItem="HQT-rS-uup" secondAttribute="bottom" constant="1" id="kit-hP-SNb"/>
-                                                        <constraint firstItem="WoT-oo-Hsq" firstAttribute="leading" secondItem="e65-P1-HC4" secondAttribute="trailing" constant="8" id="nzI-bb-gQ0"/>
-                                                        <constraint firstItem="WoT-oo-Hsq" firstAttribute="top" secondItem="5jQ-4E-jZh" secondAttribute="top" constant="30" id="tTD-Iz-AEY"/>
-                                                        <constraint firstItem="LY9-Wy-qf4" firstAttribute="centerY" secondItem="a0U-sX-pT0" secondAttribute="centerY" id="zG7-pi-Ifo"/>
+                                                        <constraint firstItem="LY9-Wy-qf4" firstAttribute="centerY" secondItem="a0U-sX-pT0" secondAttribute="centerY" id="9h6-7D-MID"/>
+                                                        <constraint firstAttribute="bottom" secondItem="WoT-oo-Hsq" secondAttribute="bottom" constant="8" id="DDb-7s-x4f"/>
+                                                        <constraint firstItem="a0U-sX-pT0" firstAttribute="top" secondItem="5jQ-4E-jZh" secondAttribute="top" constant="8" id="IMW-xv-NJK"/>
+                                                        <constraint firstItem="Uri-qY-Dn0" firstAttribute="top" secondItem="HQT-rS-uup" secondAttribute="bottom" id="Mtr-dH-qkT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="WoT-oo-Hsq" secondAttribute="trailing" constant="12" id="SlP-5Z-Yp5"/>
+                                                        <constraint firstItem="e65-P1-HC4" firstAttribute="leading" secondItem="Uri-qY-Dn0" secondAttribute="trailing" constant="10" id="eCF-x6-Wka"/>
+                                                        <constraint firstItem="Uri-qY-Dn0" firstAttribute="leading" secondItem="LY9-Wy-qf4" secondAttribute="trailing" constant="10" id="fH5-TD-38D"/>
+                                                        <constraint firstItem="LY9-Wy-qf4" firstAttribute="leading" secondItem="a0U-sX-pT0" secondAttribute="trailing" constant="8" id="hPs-On-vqC"/>
+                                                        <constraint firstItem="a0U-sX-pT0" firstAttribute="leading" secondItem="5jQ-4E-jZh" secondAttribute="leading" constant="16" id="igh-R4-Arb"/>
+                                                        <constraint firstItem="e65-P1-HC4" firstAttribute="centerY" secondItem="WoT-oo-Hsq" secondAttribute="centerY" id="lg8-hG-ddq"/>
+                                                        <constraint firstItem="HQT-rS-uup" firstAttribute="centerY" secondItem="5jQ-4E-jZh" secondAttribute="centerY" id="p7m-bi-ifH"/>
+                                                        <constraint firstItem="WoT-oo-Hsq" firstAttribute="top" secondItem="5jQ-4E-jZh" secondAttribute="top" constant="8" id="pzy-N9-8jf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="a0U-sX-pT0" secondAttribute="bottom" constant="8" id="qG3-sJ-naf"/>
+                                                        <constraint firstItem="HQT-rS-uup" firstAttribute="centerX" secondItem="5jQ-4E-jZh" secondAttribute="centerX" id="sBJ-8h-tXw"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -601,19 +612,19 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="slR-y7-TBg">
                                                             <rect key="frame" x="184.5" y="61" width="45.5" height="23"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMB-26-s4C">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMB-26-s4C">
                                                                     <rect key="frame" x="0.0" y="0.0" width="11.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                     <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om1-dx-67c">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om1-dx-67c">
                                                                     <rect key="frame" x="19.5" y="0.0" width="6.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                                                     <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-Ae-oyk">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-Ae-oyk">
                                                                     <rect key="frame" x="34" y="0.0" width="11.5" height="23"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                     <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -977,7 +988,7 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zaB-mL-poo">
                                                                     <rect key="frame" x="156.5" y="45.5" width="45.5" height="23"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWf-pc-gem">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWf-pc-gem">
                                                                             <rect key="frame" x="0.0" y="0.0" width="11.5" height="23"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                                             <color key="textColor" red="0.93333333330000001" green="0.60392156860000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -2361,39 +2372,41 @@ In the current draw, which will be held from November 13 to 20, two tennis playe
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Stadium: Olympic Tennis Center. Central Court" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-E7-nbO">
-                                                        <rect key="frame" x="25" y="197" width="264" height="21"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wHS-UL-jqJ">
+                                                        <rect key="frame" x="16" y="170" width="282" height="60"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium: Olympic Tennis Center. Central Court" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfb-Dm-imv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="282" height="16.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium: Olympic Tennis Center. Central Court" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-E7-nbO">
+                                                                <rect key="frame" x="0.0" y="21.5" width="282" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium: Olympic Tennis Center. Central Court" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZD-bO-FtA">
+                                                                <rect key="frame" x="0.0" y="43.5" width="282" height="16.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="1IT-de-tiu"/>
+                                                            <constraint firstAttribute="height" constant="60" id="KrC-Oa-SAq"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Stadium: Olympic Tennis Center. Central Court" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZD-bO-FtA">
-                                                        <rect key="frame" x="25" y="226" width="264" height="21"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="BEq-b1-46u"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Stadium: Olympic Tennis Center. Central Court" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfb-Dm-imv">
-                                                        <rect key="frame" x="25" y="168" width="264" height="21"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="7cp-Hc-gh9"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.1764705882352941" green="0.21176470588235294" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="8lN-DT-DgD"/>
                                                     <constraint firstItem="dOY-cp-sxd" firstAttribute="leading" secondItem="KhX-dJ-v3F" secondAttribute="leading" id="JBX-78-Ju3"/>
                                                     <constraint firstAttribute="trailing" secondItem="dOY-cp-sxd" secondAttribute="trailing" id="MOL-Ba-M3H"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wHS-UL-jqJ" secondAttribute="bottom" constant="20" id="cML-eq-EOh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wHS-UL-jqJ" secondAttribute="trailing" constant="16" id="qAq-rg-ees"/>
+                                                    <constraint firstItem="wHS-UL-jqJ" firstAttribute="leading" secondItem="KhX-dJ-v3F" secondAttribute="leading" constant="16" id="qhV-g4-Y4O"/>
                                                     <constraint firstItem="dOY-cp-sxd" firstAttribute="top" secondItem="KhX-dJ-v3F" secondAttribute="top" id="v7l-KJ-CIN"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
